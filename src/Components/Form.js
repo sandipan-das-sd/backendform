@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Form() {
+  let [FormData,setFormData]=useState(
+        {
+          fname:'',
+          lname:'',
+          username:'',
+          city:'',
+          state:'',
+          zip:''
+        }
+    )
   return (
+      
     <div className='container-fluid'>
       <div className='heading' style={
         {
